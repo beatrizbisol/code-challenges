@@ -1,4 +1,4 @@
-# Desafios de processos seletivos
+# Code challenges
 
 Exercícios usados em processos seletivos. Cada arquivo descreve um desafio, a entrada e a saída esperada.
 
