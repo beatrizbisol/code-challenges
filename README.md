@@ -4,4 +4,4 @@ Exercícios usados em processos seletivos. O modelo de cada desafio está em [ch
 
 ## Desafios
 
-- [Melhorar tipos do dicionário](challenges/01-melhorar-tipos-do-dicionario.md) — Python
+- [Tipos de um JSON](challenges/01-tipos-de-um-json.md) — Python

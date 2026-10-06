@@ -1,8 +1,13 @@
 # Título do desafio
 
-## Enunciado
+<!--
+Orientações deste modelo. Não copie estes comentários para o arquivo do desafio.
+- Enunciado: descreva o que a pessoa precisa fazer, com a entrada e a saída esperada.
+- Código entregue no live coding: o código inicial da sessão.
+- Código melhorado: versão de referência para quem conduz a entrevista.
+-->
 
-Descreva o que a pessoa precisa fazer. Inclua a entrada e a saída esperada.
+## Enunciado
 
 ## Código entregue no live coding
 
@@ -11,8 +16,6 @@ Descreva o que a pessoa precisa fazer. Inclua a entrada e a saída esperada.
 ```
 
 ## Código melhorado
-
-Referência para quem conduz a entrevista. Não entra no material enviado à pessoa candidata.
 
 ```python
 # versão de referência

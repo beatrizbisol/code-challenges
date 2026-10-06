@@ -1,4 +1,4 @@
-# Melhorar tipos do dicionário
+# Tipos de um JSON
 
 ## Enunciado
 
@@ -26,8 +26,6 @@ print(output)
 ```
 
 ## Código melhorado
-
-Referência para quem conduz a entrevista. Não entra no material enviado à pessoa candidata.
 
 ```python
 TIPOS = {
