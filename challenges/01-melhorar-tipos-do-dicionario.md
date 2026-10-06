@@ -1,18 +1,18 @@
 # Melhorar tipos do dicionário
 
-Melhore o código abaixo.
+## Enunciado
 
-A saída esperada é:
-
-```text
-age NUMBER, name STRING, address STRING
-```
+Trabalhe o input para que o resultado seja o output.
 
 ```python
 entrada = {"age": 30, "name": "jose", "address": "sp"}
 
 output = 'age NUMBER, name STRING, address STRING'
+```
 
+## Código entregue no live coding
+
+```python
 output = ''
 for k, v in entrada.items():
     if isinstance(v, int):
@@ -22,5 +22,22 @@ for k, v in entrada.items():
     print(k, tipo)
     output += f'{k} {tipo}, '
 
+print(output)
+```
+
+## Código melhorado
+
+Referência para quem conduz a entrevista. Não entra no material enviado à pessoa candidata.
+
+```python
+TIPOS = {
+    int: "NUMBER",
+    str: "STRING",
+}
+entrada = {"age": 30, "name": "jose", "address": "sp"}
+output = ", ".join(
+    f"{chave} {TIPOS[type(valor)]}"
+    for chave, valor in entrada.items()
+)
 print(output)
 ```
