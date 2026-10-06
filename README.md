@@ -4,4 +4,4 @@ Exercícios usados em processos seletivos. Cada arquivo descreve um desafio, a e
 
 ## Desafios
 
-- [Melhorar tipos do dicionário](desafios/01-melhorar-tipos-do-dicionario.md) — Python
+- [Melhorar tipos do dicionário](challenges/01-melhorar-tipos-do-dicionario.md) — Python
