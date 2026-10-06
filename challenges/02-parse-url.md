@@ -4,18 +4,23 @@
 
 Implemente `parse_url`. A função recebe uma URL e devolve um `ParsedURL` com protocolo, domínio, caminho e parâmetros de query.
 
-```python
-url = "https://api.exemplo.com/v1/users?id=10&active=true"
-
-print(parse_url(url))
-# protocol: https, domain: api.exemplo.com, path: /v1/users, query_params: {'id': '10', 'active': 'true'}
-```
-
 Sem caminho, `path` fica vazio. Sem query string, `query_params` fica um dicionário vazio.
+
+```python
+if __name__ == "__main__":
+    print(parse_url("https://api.charterup.com/v1/buses?city=Austin&capacity=50"))
+    print(parse_url("http://example.com/path"))
+    print(parse_url("https://example.engineering"))
+    print(parse_url("https://example.com?key=value"))
+    print(parse_url("https://example.com/path/to/resource?a=1&b=2&c="))
+```
 
 ## Código entregue no live coding
 
 ```python
+from typing import Dict
+
+
 class ParsedURL:
     def __init__(self, protocol: str, domain: str, path: str, query_params: Dict[str, str]):
         self.protocol = protocol
@@ -33,7 +38,52 @@ class ParsedURL:
 
 
 def parse_url(url: str) -> ParsedURL:
-    pass
+    protocol, remaining_url = url.split("://")
+    print(protocol)
+    print(remaining_url)
+    query_params = {}
+    if remaining_url.find("?") == -1:
+        pass
+    else:
+        remaining_url, query_params = remaining_url.split("?")
+    print(query_params)
+    if remaining_url.find("/") == -1:
+        if remaining_url.split("?") == -1:
+            domain = remaining_url
+        else:
+            domain = remaining_url.split("?")[0]
+    else:
+        domain = remaining_url.split("/")[0]
+    print(domain)
+    position_s = remaining_url.find("/")
+    # position_i = remaining_url.find("?")
+    path = ""
+    if position_s == -1:
+        pass
+    else:
+        path = remaining_url[position_s:]
+    print(path)
+    query_params = dict()
+    return ParsedURL(protocol, domain, path, query_params)
+
+# split function
+# txt = "hello, my name is Peter, I am 26 years old"
+
+# x = txt.split(", ") # delimeter
+
+# print(x) # ["hello", "my name is Peter", "I am 26 years old"]
+
+# string.find("?") # position of string or -1 if not found
+
+# substring
+# url = "http://example.com/path"
+# print(url[7:]) = "example.com/path"
+if __name__ == "__main__":
+    print(parse_url("https://api.charterup.com/v1/buses?city=Austin&capacity=50"))
+    print(parse_url("http://example.com/path"))
+    print(parse_url("https://example.engineering"))
+    print(parse_url("https://example.com?key=value"))
+    print(parse_url("https://example.com/path/to/resource?a=1&b=2&c="))
 ```
 
 ## Código melhorado
