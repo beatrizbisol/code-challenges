@@ -1,6 +1,6 @@
 # Code challenges
 
-Exercícios usados em processos seletivos. Cada arquivo descreve um desafio, a entrada e a saída esperada.
+Exercícios usados em processos seletivos. O modelo de cada desafio está em [challenges/template.md](challenges/template.md).
 
 ## Desafios
 
