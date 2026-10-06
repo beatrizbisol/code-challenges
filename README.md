@@ -7,6 +7,7 @@ Material de processos seletivos, em duas vertentes.
 Live coding. O modelo está em [challenges/template.md](challenges/template.md).
 
 - [Tipos de um JSON](challenges/01-tipos-de-um-json.md) — Python
+- [Parse de URL](challenges/02-parse-url.md) — Python
 
 ## Cenários
 
